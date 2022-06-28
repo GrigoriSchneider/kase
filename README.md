@@ -1,4 +1,4 @@
-# Kadsa React Website
+# Kasa React Website
 
 ## start project
 
