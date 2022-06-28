@@ -1,0 +1,142 @@
+.appartment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ff6060;
+  font-family: Montserrat;
+  margin-top: 2rem;
+
+  &__header {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 1240px;
+
+    @media screen and (max-width: 960px) {
+      width: 345px;
+      flex-direction: column;
+    }
+
+    & h1 {
+      font-size: 36px;
+      @media screen and (max-width: 960px) {
+        font-size: 20px;
+      }
+    }
+
+    & p {
+      font-size: 18px;
+      margin-right: 1rem;
+      @media screen and (max-width: 960px) {
+        font-size: 14px;
+      }
+    }
+
+    &-right {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__tags {
+    display: flex;
+  }
+
+  &__tags span {
+    width: 150px;
+    height: 25px;
+    background-color: #ff6060;
+    color: #fff;
+    border-radius: 10px;
+
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+
+    @media screen and (max-width: 960px) {
+      width: 100px;
+      height: 20px;
+      border-radius: 5px;
+      font-size: 10px;
+    }
+  }
+
+  &__host {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    & img {
+      border-radius: 50%;
+      @media screen and (max-width: 960px) {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  &__rating {
+    display: flex;
+    justify-content: flex-end;
+
+    & svg {
+      font-size: 24px;
+    }
+  }
+
+  &__body {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    width: 1240px;
+    justify-content: space-between;
+    font-size: 18px;
+
+    @media screen and (max-width: 960px) {
+      flex-direction: column;
+      width: 335px;
+    }
+    & .collapsible .toggle {
+      margin-bottom: 15px;
+      @media screen and (max-width: 960px) {
+        width: 335px;
+      }
+    }
+    & .collapsible .content.show {
+      @media screen and (max-width: 960px) {
+        width: 315px;
+      }
+    }
+
+    & ul {
+      list-style: none;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .image {
+    width: 335px;
+    height: 255px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  .slider {
+    width: 420px;
+  }
+  .left-arrow {
+    top: 105px;
+    height: 50px;
+    left: 40px;
+  }
+  .right-arrow {
+    top: 105px;
+    height: 50px;
+    right: 40px;
+  }
+}

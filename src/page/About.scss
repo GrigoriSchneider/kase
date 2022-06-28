@@ -1,0 +1,36 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Montserrat;
+}
+.about {
+  width: 1240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media only screen and (max-width: 960px) {
+    width: 370px;
+  }
+}
+.about .collapsible .toggle {
+  font-size: 24px;
+  width: 1024px;
+  margin-bottom: 30px;
+  @media only screen and (max-width: 960px) {
+    width: 335px;
+    font-size: 15px;
+  }
+}
+
+.about .collapsible .content {
+  width: 984px;
+  margin-top: -2.5rem;
+  font-size: 24px;
+  padding-right: 20px;
+  padding-left: 20px;
+  @media only screen and (max-width: 960px) {
+    width: 295px;
+    font-size: 13px;
+  }
+}

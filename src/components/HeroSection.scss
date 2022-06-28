@@ -1,0 +1,38 @@
+.hero-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+  font-family: 'Montserrat', sans-serif;
+  @media screen and (max-width: 960px) {
+    margin-bottom: 2.5rem;
+  }
+
+  &__img-container {
+    position: relative;
+
+    img {
+      border-radius: 25px;
+      width: 1240px;
+      height: 223px;
+      object-fit: cover;
+      align-self: center;
+      filter: brightness(50%);
+      @media screen and (max-width: 960px) {
+        width: 335px;
+        height: 111px;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  h1 {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    color: #fff;
+    font-size: 48px;
+    @media screen and (max-width: 960px) {
+      font-size: 24px;
+    }
+  }
+}
