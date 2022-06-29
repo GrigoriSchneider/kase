@@ -14,7 +14,6 @@ const ImageSlider = ({ sliderData }) => {
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
-  // console.log(current);
 
   if (!Array.isArray(sliderData) || sliderData.length <= 0) {
     return null;

@@ -4,7 +4,7 @@ import arrowLeft from '../images/arrowLeft.svg';
 
 export default function Collapsible(props) {
   const [isOpen, setIsOpen] = useState(false);
-  // console.log(props.label);
+ 
 
   return (
     <div className='collapsible'>
