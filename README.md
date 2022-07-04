@@ -1,6 +1,6 @@
 # Kasa React Website
 
-# github repository
+# github repo
 
 https://github.com/GrigoriSchneider/kase
 
