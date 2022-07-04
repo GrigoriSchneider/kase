@@ -1,5 +1,9 @@
 # Kasa React Website
 
+# github repository
+
+https://github.com/GrigoriSchneider/kase
+
 ## start project
 
 - npm install

@@ -4,6 +4,7 @@ import Slider from '../components/ImageSlider';
 import StarRating from '../components/StarRating';
 import './Appartment.scss';
 import Collapsible from '../components/Collapsible';
+import Error from './Error';
 
 export default class Appartment extends Component {
   constructor(props) {
@@ -17,6 +18,9 @@ export default class Appartment extends Component {
   render() {
     const { getRoom } = this.context;
     const room = getRoom(this.state.id);
+    if (!room) {
+      return <Error />;
+    }
 
     const {
       title,

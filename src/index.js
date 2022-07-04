@@ -18,7 +18,7 @@ root.render(
           <Route exact path='/' component={Home} />
           <Route exact path='/appartment/:id' component={Appartment} />
           <Route exact path='/about' component={About} />
-          <Route path='*' component={Error} />
+          <Route component={Error} />
         </Switch>
       </BrowserRouter>
     </RoomProvider>
